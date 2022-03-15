@@ -18,3 +18,4 @@
 ## to run this program clone it and open with microsoft visual studio
 
 ##  the program look like a console game.
+![](game.png)
