@@ -6,7 +6,7 @@ namespace Lab01a_NumbersGame
     [Serializable]
     internal class IndexOutOfRange : Exception
     {
-        public IndexOutOfRange()
+        public IndexOutOfRange() : base("Index is Out Of Range")
         {
         }
 
