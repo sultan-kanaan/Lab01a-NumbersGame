@@ -6,7 +6,18 @@ namespace Lab01a_NumbersGame
     {
         static void Main(string[] args)
         {
-            StartSequence();
+            try
+            {
+                StartSequence();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Program is complete!");
+            }
 
         }
 
@@ -50,10 +61,7 @@ namespace Lab01a_NumbersGame
                 Console.WriteLine("Something went wrong! " + ex);
 
             }
-            finally
-            {
-                Console.WriteLine("program is completed");
-            }
+            
         }
 
         static int[] Populate(int[] args)
